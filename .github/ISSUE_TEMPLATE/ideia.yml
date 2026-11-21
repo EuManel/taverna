@@ -1,0 +1,45 @@
+name: "💡 Suggest an idea / Sugerir ideia"
+description: "Something you'd like to see in Taverna / Algo que você gostaria de ver no Taverna"
+title: "[Idea/Ideia] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **EN:** Thanks for the idea! Tell us what you'd like to do at the table — the problem matters more than
+        the exact solution.
+
+        **PT:** Valeu pela ideia! Conta o que você queria fazer na mesa — o problema importa mais que a solução
+        exata.
+  - type: input
+    id: versao
+    attributes:
+      label: "Taverna version / Versão do Taverna"
+      placeholder: "v1.0.0"
+  - type: dropdown
+    id: papel
+    attributes:
+      label: "For whom? / Pra quem?"
+      options:
+        - "Game Master / Mestre"
+        - "Player / Jogador"
+        - "Both / Os dois"
+    validations:
+      required: true
+  - type: textarea
+    id: ideia
+    attributes:
+      label: "The idea / A ideia"
+      description: "What would you like to do, and why? / O que você queria fazer, e por quê?"
+    validations:
+      required: true
+  - type: textarea
+    id: hoje
+    attributes:
+      label: "How do you do it today? / Como você faz isso hoje?"
+      description: "Workarounds, other programs… / Gambiarras, outros programas…"
+  - type: textarea
+    id: extra
+    attributes:
+      label: "Images or examples / Imagens ou exemplos"
+      description: "Sketches, screenshots, links (only things you're allowed to share) / Rascunhos, prints, links (só o que você pode compartilhar)"

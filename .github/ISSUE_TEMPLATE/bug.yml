@@ -1,0 +1,79 @@
+name: "🐞 Bug report / Relatar bug"
+description: "Something went wrong in Taverna / Algo deu errado no Taverna"
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **EN:** Thanks for reporting! Inside Taverna, use **Help → Report a problem**: it creates a `.zip` on your
+        Desktop with the error log and system info (nothing is sent automatically). Please attach it below.
+
+        **PT:** Valeu por avisar! Dentro do Taverna, use **Ajuda → Reportar problema**: ele cria um `.zip` na sua
+        Área de Trabalho com o registro de erros e as informações do sistema (nada é enviado sozinho). Anexe aqui
+        embaixo, por favor.
+  - type: input
+    id: versao
+    attributes:
+      label: "Taverna version / Versão do Taverna"
+      description: "Bottom right corner of the start screen / Canto de baixo, à direita, da tela inicial"
+      placeholder: "v1.0.0"
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: "Windows"
+      placeholder: "Windows 11 23H2 / Windows 10 22H2"
+    validations:
+      required: true
+  - type: input
+    id: placa
+    attributes:
+      label: "Graphics card / Placa de vídeo"
+      description: "Settings → System → Display → Advanced display / Configurações → Sistema → Tela → Vídeo avançado"
+      placeholder: "NVIDIA GeForce GTX 1060 / Intel UHD 620 / AMD Radeon RX 580"
+    validations:
+      required: true
+  - type: dropdown
+    id: papel
+    attributes:
+      label: "Where did it happen? / Onde aconteceu?"
+      options:
+        - "Game Master / Mestre"
+        - "Player / Jogador"
+        - "Start screen / Tela inicial"
+        - "Connecting / Conectando"
+        - "Other / Outro"
+    validations:
+      required: true
+  - type: dropdown
+    id: graficos
+    attributes:
+      label: "Graphics option / Opção de Gráficos"
+      options:
+        - "Low / Baixo"
+        - "Medium / Médio"
+        - "High / Alto"
+        - "Don't know / Não sei"
+  - type: textarea
+    id: oque
+    attributes:
+      label: "What happened? / O que aconteceu?"
+      description: "What did you expect, and what happened instead? / O que você esperava e o que aconteceu?"
+    validations:
+      required: true
+  - type: textarea
+    id: passos
+    attributes:
+      label: "Steps to reproduce / Como repetir"
+      placeholder: |
+        1. Open Taverna as Game Master / Abrir o Taverna como Mestre
+        2. ...
+  - type: textarea
+    id: zip
+    attributes:
+      label: "\"Report a problem\" .zip / O .zip do \"Reportar problema\""
+      description: "Drag the .zip (and screenshots, if any) here / Arraste o .zip (e prints, se tiver) aqui"
+    validations:
+      required: true

@@ -407,6 +407,26 @@ class Ponte(QObject):
     def versao(self):
         return APP_VERSAO
 
+    @pyqtProperty(str, notify=mudou)
+    def avisoVersao(self):
+        """(v1.0.1) "Nova versão v1.1 disponível — baixar" quando o GitHub tem Release mais nova ("" se não)."""
+        tag = getattr(self, "_nova_versao", "")
+        if not tag:
+            return ""
+        from ..idioma import t as tr
+        return tr(f"Nova versão {tag} disponível — baixar")
+
+    def definir_nova_versao(self, tag):
+        self._nova_versao = tag
+        self.mudou.emit()
+
+    @pyqtSlot()
+    def abrirNovaVersao(self):
+        """Só abre a página do itch.io no navegador (nada é baixado pelo Taverna)."""
+        from PyQt6.QtGui import QDesktopServices
+        from ..atualizacao import PAGINA
+        QDesktopServices.openUrl(QUrl(PAGINA))
+
     @pyqtProperty("QVariantMap", constant=True)
     def luaTerror(self):
         """(v0.53, ideia do Manel) A lua do Terror muda TODA VEZ que o programa abre: lugar no céu, fase
@@ -728,6 +748,11 @@ class JanelaLancador(QMainWindow):
         self._centrar = _CentrarDialogos(self)   # (guardado numa variável)
         QApplication.instance().installEventFilter(self._centrar)
         self._atualizar_infos()
+        # (v1.0.1) aviso de versão nova: pergunta ao GitHub em segundo plano (sem internet: nada acontece)
+        from ..atualizacao import Verificador
+        self._verificador = Verificador(self)
+        self._verificador.novaVersao.connect(self.ponte.definir_nova_versao)
+        self._verificador.iniciar()
 
     # ------------------------------------------------------------ idioma
     def _carregar_qml(self):

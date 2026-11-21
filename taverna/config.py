@@ -6,7 +6,7 @@ O grid NUNCA muda de tamanho. Quem se adapta é a imagem do mapa.
 """
 
 APP_NOME = "Taverna"
-APP_VERSAO = "1.0.0"
+APP_VERSAO = "1.0.1"
 
 # Tamanho de 1 quadrado (1 metro) em pixels de cena
 CELULA = 64

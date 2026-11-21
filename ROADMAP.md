@@ -1213,6 +1213,18 @@ iniciais 3D (low-poly facetado com textura desenhada, inspirado no PS1). Desempe
     com planeta com anel girando e uma **estação espacial passando devagar**; as opções são **hologramas** que
     sobem dos projetores: parados têm interferência (tremem, falham, linhas de varredura), o mouse firma.
   - Cache das texturas 3D foi pra `_v9` (texturas mudaram). Teste `teste_futurista.py`.
+- **(v1.0.1) 🔔 Aviso de versão nova + projeto pronto pra manutenção** (pedido do Manel):
+  - **Auditoria de segurança** do repositório e do histórico: nada sensível (só IPs de exemplo, e-mails de autores
+    de fonte exigidos pela OFL, mapa de teste). Commits já usam o e-mail noreply. Nomes de teste ("Bia", "Lucia
+    Andrade") — o Manel confirma se são pessoas reais; histórico NÃO foi reescrito.
+  - **Aviso na tela inicial** (`taverna/atualizacao.py`): ao abrir, consulta em segundo plano a última Release do
+    GitHub (`api.github.com/repos/EuManel/taverna/releases/latest`, 5 s de limite, no máximo 1 vez por dia, guarda
+    em `QSettings` `atualizacao/tag` e `atualizacao/quando`). Se a tag for mais nova que `APP_VERSAO`, aparece
+    "✨ Nova versão vX.Y disponível — baixar" acima da versão; o clique abre o itch.io. NUNCA baixa nada; sem
+    internet fica quieto. Ignora rascunho e pre-release. Tag precisa ser `vX.Y` ou `vX.Y.Z`.
+    `TAVERNA_SEM_ATUALIZACAO=1` desliga (os testes usam). Teste `teste_atualizacao.py`.
+  - `CHANGELOG.md` bilíngue, modelos de issue (`.github/ISSUE_TEMPLATE/`: bug e ideia, pedindo versão, Windows,
+    placa de vídeo e o .zip do "Reportar problema") e `COMO_LANCAR_VERSAO.md` (passo a passo de lançamento).
 - **(v1.0.0) 🌐 Inglês + versão de release pro itch.io** (pedido do Manel):
   - **Seletor de idioma**: bandeirinhas 🇧🇷 🇺🇸 no rodapé da tela inicial, ao lado de Tema/Gráficos (desenhadas no
     Python, `lancador.bandeira`). Fica salvo (`QSettings("Taverna","Geral")["idioma"]`; `TAVERNA_IDIOMA` força).

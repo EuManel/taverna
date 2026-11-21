@@ -17,7 +17,8 @@ if filtro:
     arquivos = [a for a in arquivos if any(f in os.path.basename(a) for f in filtro)]
 
 amb = dict(os.environ, QT_QPA_PLATFORM="offscreen", TAVERNA_SEM_AUDIO="1", PYTHONIOENCODING="utf-8",
-           TAVERNA_IDIOMA="pt")   # (v1.0) os testes conferem os textos em português, seja qual for o idioma salvo
+           TAVERNA_IDIOMA="pt",   # (v1.0) os testes conferem os textos em português, seja qual for o idioma salvo
+           TAVERNA_SEM_ATUALIZACAO="1")   # (v1.0.1) testes não consultam o GitHub
 falhas = []
 for a in arquivos:
     nome = os.path.basename(a)

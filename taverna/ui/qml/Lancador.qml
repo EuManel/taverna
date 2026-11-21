@@ -318,10 +318,38 @@ Item {
         }
     }
     Text {
+        id: textoVersao
         anchors.right: parent.right; anchors.bottom: parent.bottom
         anchors.margins: 20
         text: "v" + ponte.versao
         color: cores.fraco
         font.pixelSize: 12
+    }
+    // (v1.0.1) versão nova no GitHub: aviso pequeno com link pro itch.io (nada é baixado sozinho)
+    Rectangle {
+        id: avisoVersao
+        visible: ponte.avisoVersao !== ""
+        anchors.right: parent.right; anchors.bottom: textoVersao.top
+        anchors.rightMargin: 16; anchors.bottomMargin: 6
+        width: rotuloAviso.implicitWidth + 22; height: rotuloAviso.implicitHeight + 10
+        radius: 5
+        color: Qt.rgba(0, 0, 0, maVersao.containsMouse ? 0.7 : 0.55)
+        border.color: cores.destaque
+        border.width: 1
+        Text {
+            id: rotuloAviso
+            anchors.centerIn: parent
+            text: "✨ " + ponte.avisoVersao
+            color: maVersao.containsMouse ? "#ffffff" : cores.destaque
+            font.pixelSize: 13
+            font.underline: maVersao.containsMouse
+        }
+        MouseArea {
+            id: maVersao
+            anchors.fill: parent
+            hoverEnabled: true
+            cursorShape: Qt.PointingHandCursor
+            onClicked: ponte.abrirNovaVersao()
+        }
     }
 }
