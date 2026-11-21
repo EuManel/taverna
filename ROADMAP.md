@@ -1235,6 +1235,10 @@ iniciais 3D (low-poly facetado com textura desenhada, inspirado no PS1). Desempe
   - **Licença (decisão do Manel): GPL-3.0** (por causa do PyQt6, que é GPL v3), não MIT. `LICENSE` na raiz =
     texto oficial da GPL v3; `LICENSE-LGPL-3.0.txt` = LGPL v3 do Qt; créditos do PyQt6 (Riverbank) e do Qt
     (The Qt Company) no `LICENCAS.md`. Os três vão no zip.
+  - **Código público no GitHub**: https://github.com/EuManel/taverna (GPL-3.0, branch `main`, commits com o
+    e-mail noreply do GitHub), Release v1.0 com o zip. `.gitignore` deixa fora builds/zips, saves, saídas dos
+    testes, `referencias/`, `CLAUDE.md` e `PEDIDOS_*.md`. README.md bilíngue (inglês primeiro). Git e gh
+    instalados pelo winget; o gh está logado na conta EuManel.
   - No inglês, a "Porta" de rede dos diálogos de conexão sai "Port" (não "Door": `dialogos._rotulo_porta`).
   - Limites conhecidos: mensagem do servidor é montada no idioma do mestre (boa parte é traduzida em quem recebe,
     pelos modelos); fichas D&D antigas guardam o texto que estava no campo (ex.: tendência em português).
