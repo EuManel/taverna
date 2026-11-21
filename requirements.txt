@@ -1,0 +1,4 @@
+PyQt6>=6.5
+pypdfium2>=4
+pypdf>=4
+numpy>=1.24

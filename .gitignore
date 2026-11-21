@@ -1,0 +1,51 @@
+# --- builds e zips de release
+release/
+build/
+dist/
+*.spec
+*.zip
+*.exe
+
+# --- caches do Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- ambientes virtuais
+.venv/
+venv/
+env/
+ENV/
+.python-version
+
+# --- sessões / saves de aventura e sobras dos testes
+*.taverna
+*.tavernapack
+*.taverna.bak
+*(cópia de segurança)*
+testes/saida/
+testes/*.png
+!testes/mapa_teste.png
+!testes/tinta.taverna
+/*.png
+erros.log
+*.log
+
+# --- notas internas (instruções do assistente de IA, pedidos)
+CLAUDE.md
+PEDIDOS_*.md
+
+# --- material de referência (imagens de outros jogos/sites, não é nosso)
+referencias/
+
+# --- editor / sistema / IA local
+.vscode/
+.idea/
+.claude/
+*.swp
+Thumbs.db
+desktop.ini
+.DS_Store

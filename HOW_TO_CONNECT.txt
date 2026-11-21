@@ -1,0 +1,191 @@
+==========================================================
+  TAVERNA - HOW TO CONNECT (game master and players)
+==========================================================
+
+[ ENGLISH ]   (Português mais abaixo)
+
+In short: Taverna tries to open itself to the internet.
+If that doesn't work, use Radmin VPN (free). Both work.
+
+The game master opens the tavern. The players join it.
+Everyone uses the SAME Taverna.exe: on the start screen,
+the GM picks "Game Master" and the friends pick "Player".
+(Language: the little flags at the bottom of the start screen.)
+
+
+----------------------------------------------------------
+ 1) GAME MASTER: open the tavern
+----------------------------------------------------------
+
+1. Open Taverna -> Game Master -> open or create the adventure.
+2. Click "Open tavern" (button at the top right,
+   or menu Session -> Open tavern).
+3. Leave port 7777 and click "Open".
+4. First time: Windows Firewall asks.
+   Tick BOTH boxes (Private and Public) and Allow.
+
+Then Taverna asks the router to open the port (UPnP).
+Look at the button that shows up in the bottom bar:
+
+  "Open over the internet · TAV-XXXXX-XXXXX"
+      -> IT WORKED. Click it, "Copy code",
+         and send the code to the players. Done.
+
+  "Local network/Radmin only (click)"
+      -> IT DIDN'T. Click it to see why
+         and go to step 3 (Radmin) below.
+
+
+----------------------------------------------------------
+ 2) PLAYER: join
+----------------------------------------------------------
+
+1. Open Taverna -> Player -> Join session.
+2. Name: your name (the GM links your token to it).
+3. Code or IP: paste the TAV-... code the GM sent
+   (or the 26.x.x.x IP, if it's through Radmin).
+4. Port: 7777 (unless the GM changed it).
+5. Join.
+
+
+----------------------------------------------------------
+ 3) IF THE INTERNET DIDN'T OPEN: Radmin VPN
+----------------------------------------------------------
+
+Why it can fail:
+- Your ISP uses CGNAT (very common): your internet
+  doesn't accept connections from outside. Opening a
+  port won't fix it. -> Radmin.
+- UPnP is turned off in the router. You can turn it on
+  in its settings (look for "UPnP") and click
+  "Try again". Or -> Radmin.
+
+With Radmin (everyone installs it: radmin-vpn.com):
+1. GM: in Radmin, Network -> Create network (name + password).
+   Send the name and password to your friends.
+2. PLAYERS: in Radmin, Network -> Join an existing
+   network -> the GM's name and password.
+3. GM: "Open tavern" shows your IP starting
+   with 26. (in gold). That's the IP for the players.
+4. PLAYERS: in "Join session", type that 26.x.x.x.
+
+Same house / same Wi-Fi: you don't need any of this.
+Use the GM's local IP (192.168... shown in
+"Open tavern").
+
+
+----------------------------------------------------------
+ 4) STILL CAN'T CONNECT?
+----------------------------------------------------------
+
+- Did the GM open the tavern? (the button becomes "Close tavern")
+- Code/IP and port typed exactly right?
+- Firewall: Control Panel -> Windows Firewall ->
+  Allow an app -> tick "Taverna" on Private
+  AND Public.
+- Radmin: is everyone online on the same network? Right
+  click your friend -> Ping. If it doesn't answer, the
+  problem is Radmin, not Taverna.
+- "Couldn't open port 7777": another program is
+  using it. Change the port (e.g. 7778) and send the new
+  one to the players.
+- "Windows protected your PC" when opening the .exe:
+  More info -> Run anyway (the .exe isn't code-signed
+  with a paid certificate, that's normal).
+
+
+
+==========================================================
+  TAVERNA - COMO CONECTAR (mestre e jogadores)
+==========================================================
+
+[ PORTUGUÊS ]
+
+Resumo: o Taverna tenta abrir pela internet sozinho.
+Se não der, use o Radmin VPN (de graça). Os dois funcionam.
+
+O mestre abre a taverna. Os jogadores entram nela.
+Todo mundo usa o MESMO Taverna.exe: na tela inicial,
+o mestre escolhe "Mestre" e os amigos escolhem "Jogador".
+(Idioma: as bandeirinhas no canto de baixo da tela inicial.)
+
+
+----------------------------------------------------------
+ 1) MESTRE: abrir a taverna
+----------------------------------------------------------
+
+1. Abra o Taverna -> Mestre -> abra ou crie a aventura.
+2. Clique em "Abrir taverna" (botão no alto, à direita,
+   ou menu Sessão -> Abrir taverna).
+3. Deixe a porta 7777 e clique em "Abrir".
+4. Primeira vez: o Firewall do Windows pergunta.
+   Marque AS DUAS caixinhas (Privada e Pública) e Permitir.
+
+Aí o Taverna pede pro roteador abrir a porta (UPnP).
+Olhe o botão que aparece embaixo, na barra:
+
+  "Aberta pela internet · TAV-XXXXX-XXXXX"
+      -> DEU CERTO. Clique nele, "Copiar código",
+         e mande o código pros jogadores. Fim.
+
+  "Só pela rede local/Radmin (clique)"
+      -> NÃO DEU. Clique nele pra ver o motivo
+         e vá pro passo 3 (Radmin) lá embaixo.
+
+
+----------------------------------------------------------
+ 2) JOGADOR: entrar
+----------------------------------------------------------
+
+1. Abra o Taverna -> Jogador -> Entrar na sessão.
+2. Nome: o seu nome (o mestre liga seu token a ele).
+3. Código ou IP: cole o código TAV-... que o mestre mandou
+   (ou o IP 26.x.x.x, se for pelo Radmin).
+4. Porta: 7777 (a não ser que o mestre tenha trocado).
+5. Entrar.
+
+
+----------------------------------------------------------
+ 3) SE A INTERNET NÃO ABRIU: Radmin VPN
+----------------------------------------------------------
+
+Por que pode falhar:
+- A operadora usa CGNAT (muito comum no Brasil): sua
+  internet não recebe conexões de fora. Abrir porta
+  não resolve. -> Radmin.
+- O UPnP está desligado no roteador. Dá pra ligar nas
+  configurações dele (procure "UPnP") e clicar em
+  "Tentar de novo". Ou -> Radmin.
+
+Com o Radmin (todo mundo instala: radmin-vpn.com):
+1. MESTRE: no Radmin, Rede -> Criar rede (nome + senha).
+   Mande o nome e a senha pros amigos.
+2. JOGADORES: no Radmin, Rede -> Entrar em uma rede
+   existente -> nome e senha do mestre.
+3. MESTRE: no "Abrir taverna" aparece o seu IP que começa
+   com 26. (em dourado). Esse é o IP dos jogadores.
+4. JOGADORES: no "Entrar na sessão", digitem esse 26.x.x.x.
+
+Mesma casa / mesmo Wi-Fi: não precisa de nada disso.
+Use o IP local do mestre (192.168... que aparece no
+"Abrir taverna").
+
+
+----------------------------------------------------------
+ 4) NÃO CONECTOU?
+----------------------------------------------------------
+
+- O mestre abriu a taverna? (o botão vira "Fechar taverna")
+- Código/IP e porta digitados certinho?
+- Firewall: Painel de Controle -> Firewall do Windows ->
+  Permitir um aplicativo -> marque "Taverna" em Privada
+  E Pública.
+- Radmin: todos aparecem online na mesma rede? Botão
+  direito no amigo -> Ping. Se não responde, o problema
+  é o Radmin, não o Taverna.
+- "Não consegui abrir a porta 7777": outro programa está
+  usando. Troque a porta (ex.: 7778) e passe a nova pros
+  jogadores.
+- "O Windows protegeu o computador" ao abrir o .exe:
+  Mais informações -> Executar assim mesmo (o .exe não
+  tem assinatura paga, é normal).

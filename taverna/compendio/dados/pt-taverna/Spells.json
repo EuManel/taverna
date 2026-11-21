@@ -1,0 +1,167 @@
+{
+"acid-splash": {
+"desc": [
+"Você arremessa uma bolha de ácido. Escolha uma criatura dentro do alcance, ou duas criaturas dentro do alcance que estejam a até 1,5 m uma da outra. O alvo precisa passar num teste de resistência de Destreza ou sofre 1d6 de dano ácido.",
+"O dano desta magia aumenta em 1d6 quando você chega ao 5º nível (2d6), 11º nível (3d6) e 17º nível (4d6)."
+]
+},
+"chill-touch": {
+"desc": [
+"Você cria uma mão esquelética e fantasmagórica no espaço de uma criatura dentro do alcance. Faça um ataque mágico à distância contra a criatura para atingi-la com o frio do túmulo. Se acertar, o alvo sofre 1d8 de dano necrótico e não pode recuperar pontos de vida até o início do seu próximo turno. Até lá, a mão fica agarrada ao alvo.",
+"Se você acertar um alvo morto-vivo, ele também tem desvantagem nas jogadas de ataque contra você até o fim do seu próximo turno.",
+"O dano desta magia aumenta em 1d8 quando você chega ao 5º nível (2d8), 11º nível (3d8) e 17º nível (4d8)."
+]
+},
+"dancing-lights": {
+"desc": [
+"Você cria até quatro luzes do tamanho de tochas dentro do alcance, que aparecem como tochas, lanternas ou orbes brilhantes flutuando no ar pela duração. Você também pode juntar as quatro luzes numa única forma brilhante, vagamente humanoide, de tamanho Médio. Qualquer que seja a forma escolhida, cada luz emite penumbra num raio de 3 m.",
+"Com uma ação bônus no seu turno, você pode mover as luzes até 18 m para um novo ponto dentro do alcance. Cada luz precisa estar a até 6 m de outra luz criada por esta magia, e uma luz se apaga se sair do alcance da magia."
+],
+"material": "Um pouco de fósforo ou de madeira de bruxa, ou um vaga-lume."
+},
+"druidcraft": {
+"desc": [
+"Sussurrando para os espíritos da natureza, você cria um dos seguintes efeitos dentro do alcance:",
+"- Você cria um pequeno efeito sensorial inofensivo que prevê como estará o clima no seu local nas próximas 24 horas. O efeito pode aparecer como um orbe dourado para céu limpo, uma nuvem para chuva, flocos de neve caindo para neve, e assim por diante. Esse efeito dura 1 rodada.",
+"- Você faz instantaneamente uma flor desabrochar, uma vagem de sementes se abrir ou um broto de folha brotar.",
+"- Você cria um efeito sensorial instantâneo e inofensivo, como folhas caindo, uma lufada de vento, o som de um pequeno animal ou um leve cheiro de gambá. O efeito precisa caber num cubo de 1,5 m.",
+"- Você acende ou apaga instantaneamente uma vela, uma tocha ou uma pequena fogueira."
+]
+},
+"eldritch-blast": {
+"desc": [
+"Um feixe de energia crepitante dispara em direção a uma criatura dentro do alcance. Faça um ataque mágico à distância contra o alvo. Se acertar, o alvo sofre 1d10 de dano de força. A magia cria mais de um feixe quando você chega a níveis mais altos: dois feixes no 5º nível, três no 11º e quatro no 17º. Você pode mirar os feixes no mesmo alvo ou em alvos diferentes. Faça uma jogada de ataque separada para cada feixe."
+]
+},
+"fire-bolt": {
+"desc": [
+"Você arremessa uma fagulha de fogo numa criatura ou objeto dentro do alcance. Faça um ataque mágico à distância contra o alvo. Se acertar, o alvo sofre 1d10 de dano de fogo. Um objeto inflamável atingido pega fogo, se não estiver sendo vestido ou carregado.",
+"O dano desta magia aumenta em 1d10 quando você chega ao 5º nível (2d10), 11º nível (3d10) e 17º nível (4d10)."
+]
+},
+"guidance": {
+"desc": [
+"Você toca uma criatura voluntária. Uma vez, antes de a magia acabar, o alvo pode rolar um d4 e somar o resultado a um teste de atributo à escolha dele. Ele pode rolar o dado antes ou depois de fazer o teste. Então a magia acaba."
+]
+},
+"light": {
+"desc": [
+"Você toca um objeto que não tenha mais de 3 m em nenhuma dimensão. Até a magia acabar, o objeto emite luz plena num raio de 6 m e penumbra por mais 6 m. A luz pode ter a cor que você quiser. Cobrir o objeto totalmente com algo opaco bloqueia a luz. A magia acaba se você conjurá-la de novo ou dispensá-la com uma ação.",
+"Se você mirar um objeto segurado ou vestido por uma criatura hostil, ela precisa passar num teste de resistência de Destreza para evitar a magia."
+],
+"material": "Um vaga-lume ou musgo fosforescente."
+},
+"mage-hand": {
+"desc": [
+"Uma mão espectral flutuante aparece num ponto que você escolher dentro do alcance. A mão dura pela duração ou até você dispensá-la com uma ação. Ela some se ficar a mais de 9 m de você ou se você conjurar esta magia de novo.",
+"Você pode usar sua ação para controlar a mão. Com ela, você pode manipular um objeto, abrir uma porta ou recipiente destrancado, guardar ou pegar um item de um recipiente aberto, ou derramar o conteúdo de um frasco. Você pode mover a mão até 9 m cada vez que a usar.",
+"A mão não pode atacar, ativar itens mágicos nem carregar mais de 4,5 kg."
+]
+},
+"mending": {
+"desc": [
+"Esta magia conserta uma única quebra ou rasgo num objeto que você tocar, como uma chave quebrada, um manto rasgado ou um odre vazando. Desde que a quebra ou o rasgo não tenha mais de 30 cm em nenhuma dimensão, você o conserta sem deixar vestígio do dano.",
+"Esta magia pode consertar fisicamente um item mágico ou um constructo, mas não pode restaurar a magia desse objeto."
+],
+"material": "Dois ímãs naturais."
+},
+"message": {
+"desc": [
+"Você aponta o dedo para uma criatura dentro do alcance e sussurra uma mensagem. O alvo (e só ele) ouve a mensagem e pode responder num sussurro que só você ouve.",
+"Você pode conjurar esta magia através de objetos sólidos se conhecer o alvo e souber que ele está do outro lado da barreira. Silêncio mágico, 30 cm de pedra, 2,5 cm de metal comum, uma folha fina de chumbo ou 90 cm de madeira bloqueiam a magia. A magia não precisa seguir em linha reta e pode contornar cantos ou passar por aberturas."
+],
+"material": "Um pedacinho de fio de cobre."
+},
+"minor-illusion": {
+"desc": [
+"Você cria um som ou a imagem de um objeto dentro do alcance, que dura pela duração. A ilusão também acaba se você dispensá-la com uma ação ou conjurar esta magia de novo.",
+"Se criar um som, o volume pode ir de um sussurro a um grito. Pode ser a sua voz, a voz de outra pessoa, o rugido de um leão, batidas de tambor ou qualquer outro som que você escolher. O som continua sem parar durante a duração, ou você pode fazer sons separados em momentos diferentes antes de a magia acabar.",
+"Se criar a imagem de um objeto (como uma cadeira, pegadas de lama ou um pequeno baú), ela não pode ser maior que um cubo de 1,5 m. A imagem não produz som, luz, cheiro nem qualquer outro efeito sensorial. Interagir fisicamente com a imagem revela que é uma ilusão, porque as coisas a atravessam.",
+"Se uma criatura usar sua ação para examinar o som ou a imagem, ela pode perceber que é uma ilusão passando num teste de Inteligência (Investigação) contra a CD de resistência das suas magias. Se a criatura perceber a ilusão, ela fica translúcida para essa criatura."
+],
+"material": "Um pedaço de lã."
+},
+"poison-spray": {
+"desc": [
+"Você estende a mão em direção a uma criatura que possa ver dentro do alcance e solta uma baforada de gás tóxico da palma. A criatura precisa passar num teste de resistência de Constituição ou sofre 1d12 de dano de veneno.",
+"O dano desta magia aumenta em 1d12 quando você chega ao 5º nível (2d12), 11º nível (3d12) e 17º nível (4d12)."
+]
+},
+"prestidigitation": {
+"desc": [
+"Esta magia é um truque simples que conjuradores iniciantes usam para praticar. Você cria um dos seguintes efeitos mágicos dentro do alcance:",
+"Você cria um efeito sensorial instantâneo e inofensivo, como uma chuva de faíscas, uma lufada de vento, notas musicais suaves ou um cheiro estranho.",
+"Você acende ou apaga instantaneamente uma vela, uma tocha ou uma pequena fogueira.",
+"Você limpa ou suja instantaneamente um objeto de até 30 cm cúbicos.",
+"Você esfria, esquenta ou dá sabor a até 30 cm cúbicos de material sem vida por 1 hora.",
+"Você faz uma cor, uma pequena marca ou um símbolo aparecer num objeto ou superfície por 1 hora.",
+"Você cria uma bugiganga não mágica ou uma imagem ilusória que caiba na sua mão e dure até o fim do seu próximo turno.",
+"Se conjurar esta magia várias vezes, você pode ter até três dos seus efeitos não instantâneos ativos ao mesmo tempo, e pode dispensar um deles com uma ação."
+]
+},
+"produce-flame": {
+"desc": [
+"Uma chama tremeluzente aparece na sua mão. Ela fica ali pela duração e não fere você nem o seu equipamento. A chama emite luz plena num raio de 3 m e penumbra por mais 3 m. A magia acaba se você dispensá-la com uma ação ou conjurá-la de novo.",
+"Você também pode atacar com a chama, mas isso encerra a magia. Ao conjurar esta magia, ou com uma ação num turno seguinte, você pode arremessar a chama numa criatura a até 9 m de você. Faça um ataque mágico à distância. Se acertar, o alvo sofre 1d8 de dano de fogo.",
+"O dano desta magia aumenta em 1d8 quando você chega ao 5º nível (2d8), 11º nível (3d8) e 17º nível (4d8)."
+]
+},
+"ray-of-frost": {
+"desc": [
+"Um feixe gélido de luz branco-azulada dispara em direção a uma criatura dentro do alcance. Faça um ataque mágico à distância contra o alvo. Se acertar, ele sofre 1d8 de dano de frio e seu deslocamento diminui em 3 m até o início do seu próximo turno.",
+"O dano desta magia aumenta em 1d8 quando você chega ao 5º nível (2d8), 11º nível (3d8) e 17º nível (4d8)."
+]
+},
+"resistance": {
+"desc": [
+"Você toca uma criatura voluntária. Uma vez, antes de a magia acabar, o alvo pode rolar um d4 e somar o resultado a um teste de resistência à escolha dele. Ele pode rolar o dado antes ou depois de fazer o teste. Então a magia acaba."
+],
+"material": "Um manto em miniatura."
+},
+"sacred-flame": {
+"desc": [
+"Um brilho como chamas desce sobre uma criatura que você possa ver dentro do alcance. O alvo precisa passar num teste de resistência de Destreza ou sofre 1d8 de dano radiante. O alvo não recebe nenhum benefício de cobertura nesse teste.",
+"O dano desta magia aumenta em 1d8 quando você chega ao 5º nível (2d8), 11º nível (3d8) e 17º nível (4d8)."
+]
+},
+"shillelagh": {
+"desc": [
+"A madeira de uma clava ou de um bordão que você esteja segurando é imbuída com o poder da natureza. Pela duração, você pode usar seu atributo de conjuração em vez de Força nas jogadas de ataque e dano corpo a corpo com essa arma, e o dado de dano dela passa a ser d8. A arma também se torna mágica, se ainda não for. A magia acaba se você conjurá-la de novo ou soltar a arma."
+],
+"material": "Visco, uma folha de trevo e uma clava ou bordão."
+},
+"shocking-grasp": {
+"desc": [
+"Um raio salta da sua mão e dá um choque numa criatura que você tentar tocar. Faça um ataque mágico corpo a corpo contra o alvo. Você tem vantagem na jogada de ataque se o alvo estiver vestindo armadura de metal. Se acertar, o alvo sofre 1d8 de dano elétrico e não pode usar reações até o início do próximo turno dele.",
+"O dano desta magia aumenta em 1d8 quando você chega ao 5º nível (2d8), 11º nível (3d8) e 17º nível (4d8)."
+]
+},
+"spare-the-dying": {
+"desc": [
+"Você toca uma criatura viva que esteja com 0 pontos de vida. A criatura fica estável. Esta magia não tem efeito em mortos-vivos nem em constructos."
+]
+},
+"thaumaturgy": {
+"desc": [
+"Você manifesta um pequeno prodígio, um sinal de poder sobrenatural, dentro do alcance. Você cria um dos seguintes efeitos mágicos dentro do alcance:",
+"- Sua voz fica até três vezes mais alta que o normal por 1 minuto.",
+"- Você faz chamas tremularem, ficarem mais fortes, mais fracas ou mudarem de cor por 1 minuto.",
+"- Você causa tremores inofensivos no chão por 1 minuto.",
+"- Você cria um som instantâneo que vem de um ponto à sua escolha dentro do alcance, como o ribombar de um trovão, o grasnar de um corvo ou sussurros sinistros.",
+"- Você faz instantaneamente uma porta ou janela destrancada se abrir ou bater com força.",
+"- Você altera a aparência dos seus olhos por 1 minuto.",
+"Se conjurar esta magia várias vezes, você pode ter até três dos seus efeitos de 1 minuto ativos ao mesmo tempo, e pode dispensar um deles com uma ação."
+]
+},
+"true-strike": {
+"desc": [
+"Você estende a mão e aponta um dedo para um alvo dentro do alcance. Sua magia lhe dá uma rápida percepção das defesas do alvo. No seu próximo turno, você tem vantagem na sua primeira jogada de ataque contra o alvo, desde que esta magia não tenha acabado."
+]
+},
+"vicious-mockery": {
+"desc": [
+"Você solta uma sequência de insultos carregados de encantamentos sutis contra uma criatura que possa ver dentro do alcance. Se o alvo puder ouvir você (mesmo sem entender), ele precisa passar num teste de resistência de Sabedoria ou sofre 1d4 de dano psíquico e tem desvantagem na próxima jogada de ataque que fizer antes do fim do próximo turno dele.",
+"O dano desta magia aumenta em 1d4 quando você chega ao 5º nível (2d4), 11º nível (3d4) e 17º nível (4d4)."
+]
+}
+}

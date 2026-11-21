@@ -1,0 +1,7 @@
+# sobras geradas pelos testes
+saida/
+*.png
+!mapa_teste.png
+*.taverna
+!tinta.taverna
+__pycache__/
